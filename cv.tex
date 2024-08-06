@@ -1,0 +1,191 @@
+\documentclass[]{article}
+
+\usepackage[paper=a4paper, left=10mm, right=10mm, top=10mm, bottom=10mm]{geometry}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[hidelinks,pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+
+\setmainfont{Inter}
+
+% clear all header and footer fields
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+
+% remove head and foot ruler
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+\definecolor{TitleBlue}{HTML}{4570ad}
+\definecolor{Base}{HTML}{606060}
+\renewcommand*\baselinestretch{0.8}\selectfont
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large
+}{}{0em}{\color{TitleBlue}\bfseries}[\titlerule\vspace{-7pt}]
+
+% -------------------------------------------
+%%%%%% CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\color{Base}
+
+\begin{document}
+
+% ----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\vtop{
+		\hbox{\strut
+			\textbf{\Large Khalid Belhadj}
+		}
+		\hbox{\strut
+			Computer Science \& AI Student
+		}
+	}
+	&
+	\vtop{
+		\hbox{\strut
+			Email : \href{mailto:khalidbelhadj124@gmail.com}{khalidbelhadj124@gmail.com}
+		}
+		\hbox{\strut
+			Website : \href{https://khalidbelhadj.github.io/portfolio/}{https://khalidbelhadj.github.io/portfolio/}
+		}
+
+		\hbox{\strut
+			GitHub : \href{https://www.github.com/khalidbelhadj}{github.com/khalidbelhadj}
+		}
+
+		\hbox{\strut
+			LinkedIn : \href{https://linkedin.com/in/khalid-belhadj-2a022b251/}{linkedin.com/in/khalid-belhadj-2a022b251/}
+		}
+
+	}
+\end{tabular*}
+
+% ---------
+% EDUCATION
+% ---------
+\section{Education}
+
+% Uni
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{University of Edinburgh}, AI and Computer Science (BSc Hons) & \textbf{September 2021 -- June 2025}
+\end{tabular*}
+
+\begin{itemize}
+	\item Averaging, and on track for a 1st class degree
+	\item Notable courses, Algorithms \& Data Structures (97\%), Machine Learning (80\%), Natural Language Processing (83\%), Calculus (90\%), Linear Algebra (90\%), and Discrete Maths \& Probability (80\%)
+\end{itemize}
+
+% IB
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{International Baccalaureate Diploma} & \textbf{September 2019 -- June 2021}
+\end{tabular*}
+
+\begin{itemize}
+	\item Received 42/45 points with 7/7 in Higher Level Maths, Physics, IT, and Business Management
+\end{itemize}
+
+% ----------
+% EXPERIENCE
+% ----------
+\section{Experience}
+
+% Morgan Stanley Internship
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Morgan Stanley}, Technology Summer Analyst & \textbf{June 2024 -- September 2024}
+\end{tabular*}
+\begin{itemize}
+	\item Developed a low latency distributed cache using Redis for an internal product reference data service, used by hundreds of internal tools
+	\item Spike tested the cache with millions of products to minimise latency and memory usage
+	\item Considered locality, replication and compression, ensuring high availability all around the world
+\end{itemize}
+
+% InfBase
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{InfBase}, InfBase Tutoring at The University of Edinburgh & \textbf{September 2023 -- June 2024}
+\end{tabular*}
+\begin{itemize}
+	\item Hosted help sessions for topics including Algorithms and Data Structures, Data Science and Discrete Maths
+	\item Assisted 1st and 2nd year students with understanding course material and completing assignments
+\end{itemize}
+
+% Bennu AI
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Bennu.ai}, Contractor - Software Developer \& Data Collection & \textbf{January 2023 -- March 2023}
+\end{tabular*}
+\begin{itemize}
+	\item Developed data collection software to assist the company in training classification models
+	\item Integrated the software with the company's existing data pipeline, ensuring data integrity and security
+\end{itemize}
+
+% IB Tutoring
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Tutoring}, International Baccalaureate Summer Tutoring & \textbf{June 2022 -- September 2022}
+\end{tabular*}
+\begin{itemize}
+	\item Provided one-on-one tutoring sessions for IB students, preparing them to sit the May 2023 exams
+	\item Developed personalised lesson plans and study materials tailored to each student`s needs and learning style
+\end{itemize}
+
+% --------
+% PROJECTS
+% --------
+\section{Projects and Activities}
+
+% HTBX
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Hack the Burgh}, The University of Edinburgh's annual hackathon & \textbf{March 2024}
+\end{tabular*}
+\begin{itemize}
+	\item Built a student notes sharing platform with semantic search capabilities using vector embeddings
+	\item 1st place winner in the overall hackathon, as well as "Best use of Cloud Services" award
+\end{itemize}
+
+% Code to Give
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Morgan Stanley Hackathon}, Code to Give hackathon for CHAS & \textbf{October 2023}
+\end{tabular*}
+\begin{itemize}
+	\item Built a children's story book application which uses eye-tracking to control the user interface
+	\item 1st place winner of the 2023 Code to Give hackathon hosted by Morgan Stanley Glasgow
+\end{itemize}
+
+% ML Coursework
+\textbf{Hand-Written Digit Classifier}, Using Numpy to train a classifier on the MNIST dataset
+\begin{itemize}
+	\item Used only Numpy to create a Stochastic Gradient Descent logistic classifier which achieved 98\% accuracy
+	\item Fine tuned the step and batch sizes, and investigated their effect on training time and accuracy
+\end{itemize}
+
+% SDP
+\textbf{System Design Project}, Lead a team of 9 to develop an automatic clothes drying and folding solution
+\begin{itemize}
+	\item Designed and implemented the software architecture, including the control system and user interface
+	\item Used a range of IOT devices to control the system through motors, and sensors
+\end{itemize}
+
+% Cerve
+\textbf{Low-Level Server Library}, Using C to develop an HTTP server library
+\begin{itemize}
+	\item Developed a web server library with features such as request routing, HTTP and JSON parsing
+	\item Built and used an arena allocator library to ensure memory safety and efficiency
+\end{itemize}
+
+% ------
+% SKILLS
+% ------
+\section{Skills}
+\textbf{Spoken Languages:} Fluent in English and Arabic, intermediate in French\\
+\textbf{Interests} Machine Learning, Application and Web Development, Data Science, Low-level programming\\
+\textbf{} Machine Learning, Application and Web Development, Data Science, Low-level programming\\
+
+
+\end{document}
