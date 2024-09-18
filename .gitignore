@@ -1,4 +1,5 @@
 /build/*
 !/build/cv.pdf
 !/build/CV.pdf
+!/build/Khalid-Belhadj-CV.pdf
 .DS_Store
